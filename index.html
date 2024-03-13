@@ -2,9 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Loop</title>
 </head>
 <body>
 
+<script>
+    // document.write(1 + " ");
+    // document.write(2 + " ");
+    // document.write(3 + " ");
+
+    // for(let dem = 0; dem < 6; dem++){
+    //     document.write("Tôi học tháng thứ" + dem + <br/>);
+    // }
+    /*
+    for(<Khoi tạo biến đếm>;<điều kiện dừng>:<tăng giảm biến đếm>){
+            <khối lệnh thực thi>
+    }
+
+    B1: Khởi tạo biến đếm
+    B2: Kiểm tra điều kiện dừng nếu true thì đến B3 con false thì dừng vòng lặp
+    B3: Chạy<Khối lệnh thực thi>
+    B4: <tăng giảm biến đếm>
+    B5: Quay lại B2
+     */
+
+  /*  for(;;){
+        document.write("Nam") // vòng lặp vô tận
+    }
+   */
+
+    // for(let i = "1"; i <= 1001; i++){
+    //     document.write("số" + i);
+    // }
+
+    // for (let i = 1; i <= 31; i++){
+    //     if(i % 2!== 0){
+    //         console.log(i);
+    //     }
+    // }
+
+    // for (let i = 1; i <= 31; i = i+2){
+    //     console.log(i);
+    // }
+
+    // for(let i = 5; i >=1; i--){
+    //     document.write(i);
+    // }
+/*
+    for (let i = 5; i >=1; i--){
+        if(i === 2){
+            break;
+        }
+        console.log(i);
+    }
+    Break; khi gap break vòng lặp sẽ dừng ngay lập tức
+ */
+   /*
+   for (let i = 0; i<=10; i++){
+        console.log(i);
+        if(i % 2 !== 0){
+            continue;
+        }
+    }
+    Continue: bỏ qua tất cả phần lặp phía sau của lan lặp hiện tại và chuyển den lần lặp tiếp theo
+    */
+/*
+    for (let i = 2; i <= 9; i ++){
+        for(let j = 1; j <= 9; j ++){
+            let tich = i * j;
+            console.log(i + "x" + j + "=" + tich);
+        }
+    }
+    Vòng lặp Lồng Nhau
+ */
+
+    let i = 1;
+    while (i <= 10){
+        console.log(i);
+        i++;
+    }
+
+</script>
 </body>
 </html>
