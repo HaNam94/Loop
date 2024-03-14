@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số Nguyên Tố</title>
+</head>
+<body>
+<script>
+    function laSoNguyenTo(number) {
+        let ok = true;
+        for (let i = 2; i <= number/2; i++) {
+            if (number % i == 0) {
+                ok = false;
+                break;
+            }
+        }
+        return ok;
+    }
+    let i=1;
+    let n = +prompt("Nhập vào số lượng số nguyên tố cần hiển thị");
+    while (n!=0) {
+        if (laSoNguyenTo(i)) {
+            document.write(i + " ");
+            n--;
+        }
+        i++
+    }
+</script>
+</body>
+</html>
